@@ -9,6 +9,6 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
 
     List<Category> findByName(String name);
 
-    List<Category> findByNameOrPrefix(String name, String prefix);
+//    List<Category> findByNameOrPrefix(String name, String prefix);
 
 }

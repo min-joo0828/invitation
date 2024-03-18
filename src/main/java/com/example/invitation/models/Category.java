@@ -47,4 +47,17 @@ public class Category {
     public void setPrefix(String prefix) {
         this.prefix = prefix;
     }
+
+    public Category toEntity() {
+        Category entity = new Category();
+        entity.setPrefix(prefix);
+        entity.setName(name);
+        return entity;
+    }
+
+    public Category toEntity(Category entity) {
+        entity.setPrefix(prefix);
+        entity.setName(name);
+        return entity;
+    }
 }
